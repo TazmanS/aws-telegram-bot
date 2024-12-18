@@ -23,6 +23,6 @@ export class BotService {
   @On('text')
   async onMessage(@Ctx() ctx: Context) {
     const message = ctx.message as { text: string };
-    await ctx.reply(`Вы написали!!!: ${message.text}`);
+    await ctx.reply(`Вы написали@@@: ${message.text}`);
   }
 }
